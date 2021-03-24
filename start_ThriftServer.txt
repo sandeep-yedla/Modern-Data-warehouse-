@@ -1,0 +1,25 @@
+/*
+Server Service to enable connections
+
+*/
+
+
+
+If you want to allow for BI tools to connect to spark,use this file to configure the odbc driver. 
+
+open bash shell run this command to start spark thrift server (STS)
+
+use the spark submit or any of the shell scripts
+
+/opt/spark/bin/spark-submit --class org.apache.spark.sql.hive.thriftserver.HiveThriftServer2
+
+Start the server
+
+/opt/spark/sbin/start-thriftserver.sh 
+
+stop the server
+
+/opt/spark/sbin/stop-thriftserver.sh 
+
+driver download for powerbi
+https://www.microsoft.com/en-us/download/details.aspx?id=49883
